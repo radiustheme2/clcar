@@ -1,0 +1,7 @@
+{
+  "name": "clcar",
+  "private": true,
+  "scripts": {
+    "zip": "node scripts/zip.js"
+  }
+}
