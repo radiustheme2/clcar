@@ -591,6 +591,10 @@ i.arrow-btn:after {
 .form-check input[type="radio"] + label:before {
     display: none;
 }
+/* Store opening hours radios draw their circle on the label */
+.rtcl-MyAccount-content #oh-type-wrap .form-check input[type="radio"] + label:before {
+    display: block;
+}
 
 .justify-content-center .elementor-row {
     justify-content: center !important;
@@ -1859,6 +1863,35 @@ hr {
 
 .site-header .main-navigation nav > ul > li.current-menu-item > a{
     color: var(--rt-primary-color);
+}
+
+/* Active parent and sub-menu items */
+.site-header .main-navigation nav > ul > li.current-menu-ancestor > a,
+.trheader .site-header .main-navigation nav > ul > li.current-menu-ancestor > a,
+.site-header .main-navigation ul.menu li ul.sub-menu li.current-menu-item > a,
+.site-header .main-navigation ul.menu li ul.sub-menu li.current-menu-ancestor > a{
+    color: var(--rt-primary-color);
+}
+.site-header .main-navigation ul.menu li ul.sub-menu li.current-menu-item > a::before,
+.site-header .main-navigation ul.menu li ul.sub-menu li.current-menu-ancestor > a::before{
+    width: 100%;
+}
+
+/* Dropdown arrow for parent menu items */
+.site-header .main-navigation nav > ul > li.menu-item-has-children > a::after{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 8px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    vertical-align: middle;
+    transform: translateY(-4px) rotate(45deg);
+    transition: transform 0.3s ease;
+}
+.site-header .main-navigation nav > ul > li.menu-item-has-children:hover > a::after{
+    transform: translateY(0) rotate(225deg);
 }
 .fallbackcd-menu-item .fallbackcd {
     display: block;
@@ -8374,6 +8407,10 @@ section.rt-parallax-transition-off {
 }
 .rtcl-categories.rtcl-categories-elementor .cat-item-wrap .cat-details .image{
     margin-bottom: 0;
+}
+.rtcl-categories.rtcl-categories-elementor .cat-item-wrap .cat-details .cat-figure .image,
+.rtcl-categories.rtcl-categories-elementor .cat-item-wrap .cat-details .cat-figure .image img{
+    max-height: none;
 }
 
 .rtcl-categories-elementor.rt-el-listing-cat-box-1 .cat-item-wrap .cat-details .rtcl-category-title{

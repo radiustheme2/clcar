@@ -158,6 +158,9 @@ h1, h2, h3, h4, h5, h6 {
 <?php if($menu_hover_color){ ?>
     .site-header .main-navigation ul.menu li ul.sub-menu li a:hover,
     .site-header .main-navigation nav > ul > li.current-menu-item > a,
+    .site-header .main-navigation nav > ul > li.current-menu-ancestor > a,
+    .site-header .main-navigation ul.menu li ul.sub-menu li.current-menu-item > a,
+    .site-header .main-navigation ul.menu li ul.sub-menu li.current-menu-ancestor > a,
     .site-header .main-navigation nav > ul > li > a:hover {
         color: <?php echo esc_html( $menu_hover_color ); ?>;
     }
