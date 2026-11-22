@@ -6,6 +6,11 @@ ClCar is a modern and clean WordPress Theme best suited for real estate website.
 
 Change Log:
 
+= Version: 3.2.4 (Nov 22, 2026) =
+Fixed: Plugin update compatibility issue fixed
+Updated: Classified Listing Pro v4.4.0
+Updated: Classified Listing Store v3.2.4
+
 = 3.2.3 ( Oct 18, 2026 ) =
 Added: Dropdown arrow on header sub-menu items; active page highlighted in dropdowns.
 Fixed: Search form Model and Year dropdowns not opening; Year now lists all years.
