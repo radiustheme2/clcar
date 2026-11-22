@@ -1,7 +1,7 @@
 === ClCar === 
 Contributors: RadiusTheme
 @since   1.0
-Version: 3.2.3
+Version: 3.2.4
 ClCar is a modern and clean WordPress Theme best suited for real estate website. This theme comes with all necessary features and pages for a Real Estate website.
 
 Change Log:
